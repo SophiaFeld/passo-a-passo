@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <title>Passo-a-Passo Soluções</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passo-a-Passo Soluções Acadêmicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset e Configurações Globais */
+        :root {
+            --primary-color: #0d2c4f; /* Azul Marinho Profundo */
+            --secondary-color: #ff9900; /* Laranja Vibrante */
+            --background-color: #f4f7fc;
+            --text-color: #333;
+            --light-text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Container Principal */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cabeçalho */
+        .main-header {
+            background-color: var(--light-text-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo-highlight {
+            color: var(--secondary-color);
+        }
+
+        /* Seção Hero (Boas-vindas) */
+        .hero {
+            background: linear-gradient(rgba(13, 44, 79, 0.85), rgba(13, 44, 79, 0.85)), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop) no-repeat center center/cover;
+            color: var(--light-text-color);
+            padding: 6rem 1rem;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content p strong {
+            font-weight: 600;
+        }
+
+        /* Seção de Disciplinas */
+        .subjects-section {
+            padding: 5rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            font-weight: 600;
+        }
+
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .subject-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .subject-card h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Rodapé */
+        .main-footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .main-footer p {
+            font-weight: 300;
+        }
+
+        /* Media Queries para Responsividade */
+        @media (min-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .main-header .container {
+                justify-content: space-between;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Meu Site Passo-a-Passo</h1>
-  <p>Testando o site — agora com conteúdo salvo corretamente.</p>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">Passo-a-Passo<span class="logo-highlight"> Soluções Acadêmicas</span></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Não consegue encontrar a resolução daquela questão difícil?</h1>
+                    <p>
+                        A resposta obtida por IA não é satisfatória? Não confia em IA? Aqui você encontra as <strong>resoluções mais didáticas possíveis</strong> daquelas questões que saíram das mentes criativas dos professores e que não estão nos livros.
+                        <br>
+                        <strong>Acervo em construção!</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subjects-section">
+            <div class="container">
+                <h2 class="section-title">Explore Nossas Áreas de Conhecimento</h2>
+                <div class="subjects-grid">
+                    <div class="subject-card">
+                        <h3>Cálculo</h3>
+                        <p>Resoluções detalhadas de limites, derivadas, integrais, séries e equações diferenciais aplicadas à engenharia.</p>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Física</h3>
+                        <p>Problemas resolvidos de mecânica clássica, termodinâmica, eletromagnetismo e ondulatória.</p>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Álgebra Linear</h3>
+                        <p>Passo a passo em matrizes, vetores, espaços vetoriais e transformações lineares para engenheiros.</p>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Química Tecnológica</h3>
+                        <p>Questões de balanço de massa e energia, cinética química, termoquímica e processos industriais.</p>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Fenômenos de Transporte</h3>
+                        <p>Soluções comentadas para problemas de mecânica dos fluidos, transferência de calor e massa.</p>
+                    </div>
+                    <div class="subject-card">
+                        <h3>Resistência dos Materiais</h3>
+                        <p>Análise de tensões, deformações, torção e flexão em elementos estruturais com clareza e precisão.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Passo-a-Passo Soluções Acadêmicas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
